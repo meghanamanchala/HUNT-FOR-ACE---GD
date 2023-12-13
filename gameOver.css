@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+
+}
+body,html{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+     background: rgb(159,211,199);
+    background: linear-gradient(180deg, rgba(159,211,199,1) 50%, rgba(20,45,76,1) 100%);
+}
+.center-wrapper {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.heading {
+    font-size: 128px;
+    font-weight: 900;
+    color: #142D4C;
+    font-family: 'Archivo Black', sans-serif;
+}
+.GameOver{
+    text-align: center;
+    margin-top: 110px;
+    font-size: 64px;
+}
+.score{
+    text-align: center;
+    margin-top: 130px;
+    font-size: 44px;
+
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
+button:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.playAgain{
+    font-size: 30px ;
+    font-weight: 600;
+    padding: 20px 40px;
+    color: white;
+    background-color: #385170;
+    border-radius: 18px;
+    border: 1px solid #ccc;
+}
