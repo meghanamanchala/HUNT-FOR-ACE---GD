@@ -38,10 +38,10 @@ body,html{
 }
 
 .card-container {
-    display: grid;
+    display: inline-flex;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
-    overflow-x: auto;
+   
     padding: 50px;
 }
 .card{

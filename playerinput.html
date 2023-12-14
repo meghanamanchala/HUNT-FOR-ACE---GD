@@ -17,25 +17,27 @@
     <div class="player-details">
         <h3>ENTER PLAYER DETAILS</h3>
     </div>
+    <form>
     <div class="container">
         <div class="row">
             <div class="box">
                 <p>Player Name:</p>
             </div>
-            <input type="text" placeholder="Input 1" class="yourName/">
+            <input type="text" placeholder="Input 1" class="yourName" id="input1" required />
         </div>
         <div class="row">
             <div class="box">
                 <p>Nick Name:</p>
             </div>
-            <input type="text" placeholder="Input 2" class="yourName"/>
+            <input type="text" placeholder="Input 2" class="yourName" id="input2" required />
         </div>
     </div>
     <div class="btn">
-        <button class="submit" id="submit">
+        <button class="submit" id="submit" onclick="storeInputs(event)">
             SUBMIT
         </button>
     </div>
+</form>
     <script src="./input.js"></script>
 </body>
 
