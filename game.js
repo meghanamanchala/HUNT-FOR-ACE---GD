@@ -122,10 +122,10 @@ function updateStatusElement(elem, display, color, innerHTML)
 
     if(arguments.length > 2)
     {
-        elem.style.color = color
-        elem.innerHTML = innerHTML
+        //elem.style.color = color
+        //elem.innerHTML = innerHTML
     }
-   elem.style.display = display
+   //elem.style.display = display
 
 }
 

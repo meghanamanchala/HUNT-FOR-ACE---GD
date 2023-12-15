@@ -15,22 +15,23 @@
         </div>
 
         <div class="score-and-round">
-            <div id="score">Score:<span class="badge">0</span></div>
+            <div id="score">Score:<span class="badge" id="scoreValue">0</span></div>
 
-            <div id="round">Round:<span class="badge">0</span></div>
+            <div id="round">Round:<span class="badge" id="roundValue">0</span></div>
         </div>
-
+        <p id="result"></p>
+        
         <div class="btn" >
             <button class="startGame" id="playGame">
                 Start Game
             </button>
         </div>
-
-        
+        <p id="startGameMessage" style="display: none;">Please click on the card you think is the ace spade.</p>
+       
     </div>
     <main>
         <div class="card-container">
-            <div class="card-pos-a">
+            <!-- <div class="card-pos-a">
 
             </div>
             <div class="card-pos-b">
@@ -41,10 +42,10 @@
             </div>
             <div class="card-pos-d">
                 
-            </div>
+            </div> -->
         </div>
     </main>
-    <script src="./game.js"></script>
+    <script src="./games.js"></script>
    
 </body>
 
