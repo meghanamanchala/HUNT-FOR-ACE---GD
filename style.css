@@ -14,6 +14,15 @@ body,html{
     text-align: center;
     margin-top: 40px;
 }
+.instruct{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+.question-mark{
+    width: 60px;
+}
 
 .heading {
     font-size: 128px;

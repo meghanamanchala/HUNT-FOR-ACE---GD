@@ -1,7 +1,6 @@
 *{
     margin: 0px;
     padding: 0px; 
-
 }
 body,html{
     margin: 0px;
@@ -11,6 +10,10 @@ body,html{
     background: linear-gradient(180deg, rgba(159,211,199,1) 50%, rgba(20,45,76,1) 100%);
 }
 .center-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
     text-align: center;
     margin-top: 40px;
 }
@@ -50,43 +53,29 @@ button{
 button:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
-/* .card-pos-a{
-    grid-area:a;
+#timer{
+    color:white;
+    font-size: 40px;
+    width:20px;
+    height: 20px; 
 }
-.card-pos-b{
-    grid-area: b;
-}
-.card-pos-c{
-    grid-area: c;
-  }
-.card-pos-d{
-    grid-area: d;
-}
-.card-pos-a, .card-pos-b,.card-pos-c,.card-pos-d{
-    display:inline-flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
+.time{
+    display: flex;
+    justify-content: flex-end;
     padding: 20px;
-} */
+}
+
 .card-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     padding: 30px;
-    /* border: 3px solid blue; */
+    
 }
 .card {
     width: 200px; 
     height: 290px; 
-    /* margin: 0 5px;
-    padding: 15px;
-    padding-top: 90px;
-    margin:2rem;
-    margin-left: 9rem; */
-    border: 2px solid green;
-    
   
   }
   p{
@@ -96,51 +85,6 @@ button:hover {
     padding: 1rem;
   }
   
-  .card img {
-    width: auto; 
-    height: 250px; 
-    border: 1px solid black;
-    object-fit: fit;
-    border-radius: 10px; 
-   
-  
-  }
-  /* .card-inner{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-  }
-  .card-front, .card-back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  } */
-  /* .card-img{
-
-    height:100%;
-}
-.card-back{
-    transform: rotateY(180deg);
-}
-.card-inner.flip-it{
-    transform: rotateY(180deg);
-} */
-
-
-.backCard {
-    /* background-color: red; */
-    width: 100%;
-    height: 100%;
-    background-image: url(./images/back.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 @media all and (max-width : 550px){
     .heading{
         font-size:40px;
