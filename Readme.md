@@ -23,5 +23,5 @@ Input page
 ![Screenshot (80)](https://github.com/meghanamanchala/HUNT-FOR-ACE---GD/assets/147796513/30e47ad9-e990-4e8c-9c09-39fd26734055)
 Game page
 ![Screenshot (83)](https://github.com/meghanamanchala/HUNT-FOR-ACE---GD/assets/147796513/9ddfc312-e2c9-4ca3-ac97-2873aab6daab)
-if you lost the game
+Gameover Page
 ![Screenshot (84)](https://github.com/meghanamanchala/HUNT-FOR-ACE---GD/assets/147796513/9dd89251-b0e8-4fe3-8b70-80cf9774e4f2)
