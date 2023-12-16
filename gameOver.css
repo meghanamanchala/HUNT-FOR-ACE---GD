@@ -50,3 +50,20 @@ button:hover {
     border-radius: 18px;
     border: 1px solid #ccc;
 }
+@media all and (max-width : 550px){
+    .heading{
+        font-size:40px;
+        margin-top: 10rem;
+    }
+    .card{
+        border:0px;   
+    }
+    .card-container{
+        display: flex;
+        justify-content: space-around;
+        gap:2rem;
+    }
+    .GameOver{
+        font-size: 30px;
+    }
+}

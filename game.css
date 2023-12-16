@@ -141,3 +141,17 @@ button:hover {
     background-position: center;
     background-repeat: no-repeat;
 }
+@media all and (max-width : 550px){
+    .heading{
+        font-size:40px;
+        margin-top: 10rem;
+    }
+    .card{
+        border:0px;   
+    }
+    .card-container{
+        display: flex;
+        justify-content: space-around;
+        gap:2rem;
+    }
+}

@@ -65,7 +65,7 @@ button:hover {
     padding: 20px;
  }
   
-  .box {
+  .box{
     background-color: #595A5B;
     padding: 20px;
     margin-right: 10px;
@@ -89,7 +89,37 @@ button:hover {
     
 
   }
-  
+  @media all and (max-width:550px) {
+    .heading{
+        font-size:40px;
+        margin-top: 10rem;
+    }
+    .player-details{
+        font-size:20px;
+        margin-top: 2rem;
+    }
+    .yourName{
+        font-size: 10px;
+    }
+    
+    .box{
+        width:6rem;
+        height:20px;
+    }
+    
+    input{
+        width:8rem;
+    }
+    p{
+        font-size: 19px;
+        width:6rem;
+        height: 20px;
+    }
+    img{
+        width:10px;
+        
+    }
+  }
 
 
 

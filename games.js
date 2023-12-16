@@ -24,6 +24,8 @@ audio.play();
 audio.loop = true;
 
 playGameBtn.addEventListener("click", function () {
+  createAndAppendCardsWithImages();
+setCorrectCard();
   increaseRound();
   shuffleCards();
   playGameBtn.remove();
@@ -56,36 +58,52 @@ function shuffleCards() {
   //increaseScore();
 }
 
-function createCardWithImage(imagePath) {
+function createCardWithImage(imagePath,index) {
   const card = document.createElement("div");
   card.classList.add("card");
-
+  card.dataset.index = index;
   card.style.backgroundImage = `url(${imagePath})`;
   card.style.backgroundPosition = "center";
   card.style.backgroundSize = "contain";
   card.style.backgroundRepeat = "no-repeat";
 
-  card.innerHTML = `<div class="backCard" style="opacity:0.8"></div>`;
+  card.innerHTML = `<div class="backCard" ></div>`;
 
   card.addEventListener("click", function () {
     if (imagePath === "/images/ace.png") {
       resultMessage.textContent = "Hurray..!!.You won!🥳";
-    //   backCard.style.opacity = "0";
+    // backCard.style.opacity = "0";
+    setTimeout(() => {
+    card.style.backgroundImage = `url(${imagePath})`;
+  }, 2000);
       shuffleCards();
       increaseRound();
       increaseScore();
       setTimeout(() => {
         resultMessage.textContent = "";
-        // backCard.style.opacity = "0"
-      }, 1000);
+       // backCard.style.opacity = "0";
+       card.style.backgroundImage = `url('')`;
+       revealAllCards(); 
+      }, 2000);
     } else {
+      resultMessage.textContent = "Oops! You lost! 😞"; 
+      revealAllCards();
+      setTimeout(() => {
       localStorage.setItem("scoreValue", score);
       window.location.href = "./gameover.html";
+    }, 2000); 
     }
   });
   return card;
 }
-
+function revealAllCards() {
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+    setTimeout(() => {
+      card.style.backgroundImage = `url(${cardImages[card.dataset.index]})`; 
+    }, 2000); 
+  });
+}
 function createAndAppendCardsWithImages() {
   cardImages.forEach((imagePath) => {
     const card = createCardWithImage(imagePath);
@@ -97,5 +115,4 @@ function setCorrectCard() {
   correctCardIndex = Math.floor(Math.random() * cardImages.length);
 }
 
-createAndAppendCardsWithImages();
-setCorrectCard();
+
